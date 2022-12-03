@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import CartWidget from "../CartWidget/CartWidget"
 import "./NavBar.css"
 const NavBar = () => {
     return (
@@ -24,14 +25,8 @@ const NavBar = () => {
               </Nav>
 
             </Navbar.Collapse>
-            <Navbar.Brand href="#home">
-                <img
-                src="https://png.pngtree.com/png-clipart/20190630/original/pngtree-vector-shopping-cart-icon-png-image_4162814.jpg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
-                />
+            <Navbar.Brand>
+                <CartWidget />
               </Navbar.Brand>
           </Container>
         </Navbar>
